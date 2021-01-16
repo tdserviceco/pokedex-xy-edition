@@ -1,0 +1,24 @@
+@import "./reset.scss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap");
+$frameHeight: 350px;
+$frameWidth: 430px;
+$circle: 50%;
+$pokeDexFrame: #be1c27;
+$pokeDexBody: #02abca;
+$pokeDexButton: rgba(2, 171, 202, 0.8);
+$pokeDexTopCircle: #2b2b2b;
+$pokeDexFrameBorder: #adadac;
+$hover: #01bdda;
+$font: "Noto Sans JP", sans-serif;
+
+main {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @import './pokedex-frame-top.scss';
+  @import './pokedex-frame-middle.scss';
+  @import './pokedex-frame-bottom.scss';
+}

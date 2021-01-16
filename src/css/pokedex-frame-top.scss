@@ -1,0 +1,43 @@
+.frame-top {
+  // Top
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  height: $frameHeight;
+  width: $frameWidth;
+  background: $pokeDexFrame;
+  border-top-left-radius: 3.125rem;
+  border-top-right-radius: 3.125rem;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  
+  .frame-halv-circle-top {
+    z-index: 2;
+    border-top: 2px solid $pokeDexFrameBorder;
+    border-right: 2px solid $pokeDexFrameBorder;
+    border-left: 2px solid $pokeDexFrameBorder;
+    border-bottom: 0.5px solid $pokeDexBody;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 190px;
+    width: 368px;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    background: $pokeDexTopCircle;
+
+    .frame-inside-halv-circle-top {
+      z-index: 3;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 90px;
+      width: 190px;
+      border-top-left-radius: 300px;
+      border-top-right-radius: 300px;
+      background: $pokeDexBody;
+    }
+  }
+}
